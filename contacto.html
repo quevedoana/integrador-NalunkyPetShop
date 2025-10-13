@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nalunky Pet Shop</title>
+    <link rel="icon" type="image/png" href="assets/logoResponsive.png" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productos.css">
+</head>
+<body>
+    <div id="contacto1">
+        <div id="contactanos">Contáctanos</div>
+        <p id="p-contacto1">¿Tienes alguna pregunta sobre nuestros productos? Estamos acá para ayudarte. Contáctanos y te responderemos a la brevedad.</p>
+    </div>
+
+    <div id="seccion">
+    <div id="contacto2">
+        <div id="info">Información de Contacto</div>
+        <p>Visítanos en nuestro local o comunícate con nosotros. Estaremos encantados de atenderte y ayudarte a encontrar el producto perfecto para tu mascota.</p>
+        <div id="container">
+            <div id="item">
+                <img src="assets/ubicacion.svg" alt="ubicacion" class="iconos">
+                <div id="texto">
+                    <p id="texto-titulo">Dirección </p>
+                    <p id="info2">Bolivar 1234 <br>
+                    C5700— San Luis <br>
+                    San Luis<br>
+                    Argentina</p>
+                </div>
+            </div>
+
+            <div id="item">
+                <img src="assets/telephone.svg" alt="telefono" class="iconos">
+                <div id="texto">
+                    <p id="texto-titulo">Teléfono</p>
+                    <p id="info2">+54 266 5020295</p>
+                </div>
+            </div>
+
+            <div id="item">
+                <img src="assets/mail.svg" alt="email" class="iconos">
+                <div id="texto">
+                    <p id="texto-titulo">Email</p>
+                    <p id="info2">contacto@</p>
+                </div>
+            </div>
+
+            <div id="item">
+                <img src="assets/clock.svg" alt="reloj" class="iconos">
+                <div id="texto">
+                    <p id="texto-titulo">Horarios de Atención</p>
+                    <p id="info2">Lunes a Viernes: 10:00 - 19:00 <br>
+                    Sábados: 10:00 - 14:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form id="form-contacto" method="POST">
+        <div id="info">Envíanos un mensaje</div>
+
+        <div class="item">
+            <label class="contacto" for="nombre">Nombre <em>*</em></label>
+            <input type="text" class="nombre-contacto" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
+        </div>
+
+        <div class="item">
+            <label class="contacto" for="email">Email <em>*</em></label>
+            <input type="email" class="email-contacto" id="email" name="email" required placeholder="Ingrese su email">
+        </div>
+
+        <div class="item">
+            <label class="contacto" for="mensaje">Mensaje <em>*</em></label>
+            <textarea id="mensaje" class="mensaje-contacto" name="mensaje" required rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+        </div>
+
+        <button id="btn-enviar" type="submit">Enviar</button>
+    </form>
+
+    </div>
+    
+</body>
+</html>
