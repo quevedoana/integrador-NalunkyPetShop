@@ -1,0 +1,110 @@
+.banner {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.promo-carrusel {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.promo-carrusel h2 {
+    color: #593218;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.carrusel {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+}
+
+.carrusel img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.productos-carrusel {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.productos-carrusel h2 {
+    color: #593218;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.productos.destacados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.productos.destacados img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    nav {
+        gap: 1rem;
+    }
+
+    .promo-carrusel,
+    .productos-carrusel {
+        padding: 2rem 1rem;
+    }
+
+    .carrusel > div {
+        width: 250px;
+    }
+
+    .productos.destacados {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .carrusel > div {
+        width: 200px;
+    }
+
+    .productos.destacados {
+        grid-template-columns: 1fr;
+    }
+}
