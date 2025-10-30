@@ -83,58 +83,50 @@
         </div>
       </div>
 
-      <form id="form-contacto" method="POST">
+      <form id="form-contacto" onsubmit="return validar()" novalidate>
         <div id="info">Envíanos un mensaje</div>
 
         <div class="item">
           <label class="contacto" for="nombre">Nombre *</label>
           <input
             type="text"
-            class="nombre-contacto"
-            id="nombre"
             name="nombre"
-            required
             minlength="3"
             maxlength="40"
             placeholder="Ingrese su nombre"
           />
+          <span id="errorNombre"></span>
         </div>
 
         <div class="item">
           <label class="contacto" for="telefono">Telefono *</label>
           <input
             type="tel"
-            class="telefono-contacto"
-            id="telefono"
             name="telefono"
             maxlength="10"
-            required
             placeholder="Ingrese su numero de telefono"
           />
+          <span id="errorTel"></span>
         </div>
 
         <div class="item">
           <label class="contacto" for="email">Email <em>*</em></label>
           <input
             type="email"
-            class="email-contacto"
-            id="email"
             name="email"
-            required
             placeholder="Ingrese su email"
           />
+          <span id="errorEmail"></span>
         </div>
 
         <div class="item">
           <label class="contacto" for="mensaje">Mensaje <em>*</em></label>
           <textarea
-            id="mensaje"
-            class="mensaje-contacto"
             name="mensaje"
-            required
             rows="4"
             placeholder="¿En qué podemos ayudarte?"
           ></textarea>
+          <span id="errorMens"></span>
         </div>
 
         <button class="btn-enviar" type="submit">Enviar</button>
@@ -163,5 +155,6 @@
           <p>&copy; 2025 Nalunky - Todos los derechos reservados.</p> 
         </div>
     </footer>
+    <script src="js/validaciones.js" defer></script>
   </body>
 </html>

@@ -1,25 +1,48 @@
 .banner {
     width: 100%;
-    height: 500px;
-    object-fit: cover;
+    position: relative;
     display: block;
-}
 
+}
 .banner img {
     width: 100%;
     height: auto;
     display: block;
 }
-
-.promo-carrusel {
-    padding: 3rem 2rem;
-    text-align: center;
+.banner div{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+.banner div:first-child{
+    left: 3px;
+}
+.banner div:last-child{
+    right:3px;
 }
 
-.promo-carrusel h2 {
+.banner button{
+    border: none;
+    background-color: #593218;
+    border-radius: 100%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    margin: 0 20px;
+    z-index: 101;
+    position: relative;
+}
+
+
+
+#titulo {
     color: #593218;
     margin-bottom: 2rem;
     font-size: 2rem;
+    text-align: center;
 }
 
 .carrusel {
@@ -57,6 +80,7 @@
 }
 
 
+
 .productos.destacados img {
     width: 100%;
     height: 250px;
@@ -64,7 +88,31 @@
 }
 
 
-@media (max-width: 768px) {
+
+.destacados-imagenes {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: center;
+}
+.productoN{
+    background-color: white;
+    box-shadow: 2px 2px 5px 5px;
+    color: #593218;
+    border-radius: 20px;
+    max-width: 250px;
+    max-height: 300px;
+}
+.productoN img{
+    width: 200px;
+    height: 230px;
+    border-radius: 50px;
+}
+.productoN p{
+    font-weight: bold;
+}
+
+/*@media (max-width: 768px) {
     header {
         flex-direction: column;
         gap: 1rem;
@@ -88,7 +136,9 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1rem;
     }
+
 }
+
 
 @media (max-width: 480px) {
     .logo img {
@@ -107,4 +157,5 @@
     .productos.destacados {
         grid-template-columns: 1fr;
     }
-}
+
+}*/

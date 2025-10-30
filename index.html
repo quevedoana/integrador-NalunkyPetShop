@@ -14,8 +14,9 @@
 <body>
     <header>
         <div class="logo">
+            
             <a href="index.html"> <img src="assets/logo.png" alt="logo Nalunky" /></a>
-
+            
         </div>
         <nav>
             <a href="index.html">Inicio</a>
@@ -23,48 +24,42 @@
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
-</body>
+
 
 <section class="banner">
-    <img src="assets/banner.png" alt="Nalunky - Todo para tu compañero de vida">
+    <div>
+        <button type="button" onclick="carruselPromosReversa()">◀</button>
+    </div>
+    <img src="assets/banner.png" alt="Nalunky - Todo para tu compañero de vida" id="banner-imagen">
+    <div>
+        <button type="button" onclick="carruselPromos()">▶</button>  
+    </div>
 </section>
 
-<section class="promo-carrusel">
-    <div>
-        <h2>Promociones Bancarias</h2>
-    </div>
-    <div class="carrusel">
-        <div>
-            <img src="assets/promocion1.jpg" alt="promocionBancoProvincia">
-        </div>
-        <div>
-            <img src="assets/promocion2.jpg" alt="promocionBancoSantander">
-        </div>
-        <div>
-            <img src="assets/promocion3.jpg" alt="promocionBancoGalicia">
-        </div>
-        <div>
-            <img src="assets/promocion4.jpg" alt="promocionBancoFrances">
-        </div>
-    </div>
-    
-</section>
 <section class="productos-carrusel">
     <div>
         <h2>Nuestros productos mas destacados</h2>
     </div>
-    <div class="productos destacados">
-        <div>
-            <img src="assets/CepilloVapor.webp" alt="CepilloVapor">
+    <div class="destacados-imagenes">
+        <div class="productoN">
+            <img src="/assets/Gato-AlimentoHumedoBalanced.webp">
+            <p>Alimento Balanced</p>
         </div>
-        <div>
-            <img src="assets/ComederoAutomatico.webp" alt="ComederoAutomatico">
+        <div class="productoN">
+            <img src="/assets/Gato-AlimentoHumedoProPlan.webp">
+            <p>Alimento ProPlan</p>
         </div>
-        <div>
-            <img src="assets/Gato-FuenteAgua.webp" alt="Gato-FuenteAgua">
+        <div class="productoN">
+            <img src="/assets/Gato-AlimentoHumedoPurina.webp">
+            <p>Alimento Purina</p>
         </div>
-        <div>
-            <img src="assets/Gato-Torre.webp" alt="Gato-Torre">
+        <div class="productoN">
+            <img src="/assets/Gato-AlimentoHumedoSieger.webp">
+            <p>Alimento Sieger</p>
+        </div>
+        <div class="productoN">
+            <img src="/assets/Gato-AlimentoHumedoWhiskas.webp">
+            <p>Alimento Whiskas</p>
         </div>
     </div>
 </section>
@@ -91,4 +86,6 @@
           <p>&copy; 2025 Nalunky - Todos los derechos reservados.</p> 
         </div>
     </footer>
-</html>
+    <script src="js/carrusel.js"></script> 
+</body>
+    </html>
