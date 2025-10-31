@@ -1,6 +1,111 @@
-.carrito{
-    display: flex;
-    flex-direction: row;
-    margin-left: 33%;
-    color: #593218;
+/* SECCIONES */
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: hsl(19, 56%, 40%);
+}
+section p {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  color: #555;
+}
+
+/* CARDS */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+.card-img {
+  position: relative;
+}
+.card-img img {
+  width: 100%;
+  display: block;
+}
+
+/* ETIQUETAS DESATACADO */
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #9caf88;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+/* CONTENIDO CARDS */
+.card-body {
+  padding: 1rem;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card-body h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.card-footer{
+  margin-top: auto;
+}
+.card-footer .precio{
+  font-size: 1.2rem;
+  color: #A0522D;
+  margin: 0.5rem 0;
+}
+.card-footer .btn{
+  display: inline-block;
+  background: #A0522D;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+  align-self: flex-start;
+}
+.btn:hover {
+  background: #9CAF88;
+}
+.precio {
+  font-size: 1.2rem;
+  color: #A0522D;
+  margin: 0.5rem 0 1rem;
+}
+.categoria {
+  font-size: 0.9rem;
+  color: #87A96B;
+  font-weight: bold;
+  /*display: inline-block;
+  background: #9CAF88;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;*/
 }

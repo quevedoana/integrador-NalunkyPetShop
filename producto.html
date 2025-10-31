@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/productos.css">
     <title>Productos - Pet Shop</title>
     <link rel="icon" type="image/png" href="assets/logoResponsive.png" sizes="16x16">
-
-</head>
-<body>
-   <header>
-        <div class="logo">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
             <a href="index.html"> <img src="assets/logo.png" alt="logo Nalunky" /></a>
             
         </div>
@@ -24,13 +24,32 @@
             <img src="assets/carrito.svg" alt="carrito" height="30px" width="30px">
         </div>
     </header>
-     <section class="catalogo">
-        <h2>Nuestro Catálogo</h2>
-        <p>Explora nuestra colección completa de muebles artesanales, cada pieza fabricada con la más alta calidad.</p>
-        <div class="grid-productos">
-            <!-- Los productos se cargarán aquí dinámicamente -->
-        </div>
-    </section>
+    <main>
+      <nav class="breadcrumb">
+        <a href="index.html">Inicio</a> /
+        <a href="productos.html">Productos</a> /
+        <span id="breadcrumb-producto">Producto</span>
+      </nav>
+      <div id="loader">Cargando...</div>
+      <article>
+        <img class="producto-imagen" src="" alt=""/>
+
+        <section class="producto-informacion">
+          <span class="producto-categoria"></span>
+          <h1 class="producto-nombre"></h1>
+          <p class="producto-descripcion"></p>
+          <p class="producto-precio"></p>
+
+          <div class="producto-especificaciones">
+            <h3>Especificaciones</h3>
+            <ul>
+            </ul>
+          </div>
+
+          <button id="btn-carrito">Añadir al Carrito</button>
+        </section>
+      </article>
+    </main>
     <footer class="pie">
         <div class="g1">
             <div class="box">
@@ -54,6 +73,8 @@
           <p>&copy; 2025 Nalunky - Todos los derechos reservados.</p> 
         </div>
     </footer> 
-    <script type="module" src="./js/render-productos.js"></script>
-</body>
+    <script src="./js/main.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script type="module" src="./js/productoDetalle.js"></script>
+  </body>
 </html>

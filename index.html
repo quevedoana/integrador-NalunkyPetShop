@@ -14,64 +14,51 @@
 <body>
     <header>
         <div class="logo">
-            
             <a href="index.html"> <img src="assets/logo.png" alt="logo Nalunky" /></a>
-            
         </div>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="productos.html">Productos</a>
             <a href="contacto.html">Contacto</a>
         </nav>
+        <div class="carrito">
+            <a href="index.html"><img src="assets/carrito.svg" alt="carrito" height="30px" width="30px"></a>
+            <span class="carrito-count">0</span>
+        </div>
+        </div>
     </header>
 
+    <main>
+        <section class="banner">
+            <div>
+                <button type="button" onclick="carruselPromosReversa()">◀</button>
+            </div>
+            <img src="assets/banner1.jpg" alt="Nalunky - Todo para tu compañero de vida" id="banner-imagen">
+            <div>
+                <button type="button" onclick="carruselPromos()">▶</button>
+            </div>
+        </section>
 
-<section class="banner">
-    <div>
-        <button type="button" onclick="carruselPromosReversa()">◀</button>
-    </div>
-    <img src="assets/banner.png" alt="Nalunky - Todo para tu compañero de vida" id="banner-imagen">
-    <div>
-        <button type="button" onclick="carruselPromos()">▶</button>  
-    </div>
-</section>
-
-<section class="productos-carrusel">
-    <div>
-        <h2>Nuestros productos mas destacados</h2>
-    </div>
-    <div class="destacados-imagenes">
-        <div class="productoN">
-            <img src="/assets/Gato-AlimentoHumedoBalanced.webp">
-            <p>Alimento Balanced</p>
-        </div>
-        <div class="productoN">
-            <img src="/assets/Gato-AlimentoHumedoProPlan.webp">
-            <p>Alimento ProPlan</p>
-        </div>
-        <div class="productoN">
-            <img src="/assets/Gato-AlimentoHumedoPurina.webp">
-            <p>Alimento Purina</p>
-        </div>
-        <div class="productoN">
-            <img src="/assets/Gato-AlimentoHumedoSieger.webp">
-            <p>Alimento Sieger</p>
-        </div>
-        <div class="productoN">
-            <img src="/assets/Gato-AlimentoHumedoWhiskas.webp">
-            <p>Alimento Whiskas</p>
-        </div>
-    </div>
-</section>
+        <section class="productos-carrusel">
+            <div>
+                <h2>Nuestros productos mas destacados</h2>
+            </div>
+            <div class="carrusel-wrapper">
+                <button class="carrusel-btn left"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="carrusel" id="destacados-container"></div>
+                <button class="carrusel-btn right"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+    </main>
     <footer class="pie">
         <div class="g1">
             <div class="box">
                 <img src="assets/logo.png" alt="logo Nalunky">
             </div>
             <div class="box">
-            <h2>SOBRE NOSOTROS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, culpa.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, culpa.</p>
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, culpa.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, culpa.</p>
             </div>
             <div class="box">
                 <h2>SIGUENOS</h2>
@@ -83,9 +70,11 @@
             </div>
         </div>
         <div class="g2">
-          <p>&copy; 2025 Nalunky - Todos los derechos reservados.</p> 
+            <p>&copy; 2025 Nalunky - Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="js/carrusel.js"></script> 
+    <script src="./js/main.js"></script>
+    <script src="./js/carrito.js"></script>
 </body>
-    </html>
+
+</html>

@@ -1,6 +1,7 @@
 const imgPromos = [
-  "../assets/banner.png",
-  "../assets/Captura.PNG"
+  "../assets/banner1.jpg",
+  "../assets/banner2.jpg",
+  "../assets/banner3.jpg"
 ];
 const img = document.getElementById("banner-imagen");
 let indiceImg = 0;
