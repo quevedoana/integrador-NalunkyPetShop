@@ -1,17 +1,68 @@
 export const productos = [
     {
         id: 1,
-        nombre: "Cama tipo Dona con Tunel y Pompones",
-        categoria: "Comodidad",
-        descripcion: "Cama tipo Dona con Tunel y Pompones (90 x 90 x 62 cm)",
-        precio: 106400,
-        imagen: "assets/CamaGatoJuego.png",
-        especificaciones: [
-            { titulo: "Medidas", valor: "90 x 90 x 62 cm" },
-            { titulo: "Detalles", valor: "La combinación de túnel, cama y carpita que proporciona a tu gato un espacio acogedor para jugar y descansar. El túnel circular es perfecto para una persecución o para gatos que quieren esconderse fuera de la vista. Con divertidos juguetes colgantes." }
-        ],
+        nombre: "Alimento Gato Agility",
+        descripcion: "Alimento balanceado para gatos adultos Agility",
+        precio: 8000,
+        imagen: "assets/Gato-AlimentoAgility.webp",
         destacado: false
     },
+    {
+        id: 26,
+        nombre: "Alimento Humedo ProPlan Gato",
+        descripcion: "Alimento húmedo ProPlan para gatos",
+        precio: 4000,
+        imagen: "assets/Gato-AlimentoHumedoProPlan.webp",
+        destacado: false
+    },
+    {id: 27,
+        nombre: "Alimento Humedo Purina Gato",
+        descripcion: "Alimento húmedo Purina para gatos",
+        precio: 3000,
+        imagen: "assets/Gato-AlimentoHumedoPurina.webp",
+        destacado: false
+    },
+    {
+        id: 29,
+        nombre: "Alimento Humedo Whiskas Gato",
+        descripcion: "Alimento húmedo Whiskas para gatos",
+        precio: 1500,
+        imagen: "assets/Gato-AlimentoHumedoWhiskas.webp",
+        destacado: false
+    }, 
+    {
+        id: 74,
+        nombre: "Alimento Dog Chow Perro",
+        descripcion: "Alimento balanceado para perros adultos Dog Chow",
+        precio: 8000,
+        imagen: "assets/Perro-DogChow.webp",
+        destacado: false
+    }, 
+    {
+        id: 73,
+        nombre: "Alimento Balanced Perro",
+        descripcion: "Alimento balanceado para perros adultos Balanced",
+        precio: 8000,
+        imagen: "assets/Perro-Balanced.webp",
+        destacado: false
+    },
+    {
+        id: 77,
+        nombre: "Alimento Old Prince Perro",
+        descripcion: "Alimento balanceado para perros adultos Old Prince",
+        precio: 8000,
+        imagen: "assets/Perro-OldPrince.webp",
+        destacado: false
+    },
+    {
+        id: 76,
+        nombre: "Alimento Excellent Perro",
+        descripcion: "Alimento balanceado para perros adultos Excellent",
+        precio: 8000,
+        imagen: "assets/Perro-Excellent.webp",
+        destacado: false
+    },
+
     {
         id: 2,
         nombre: "Cama Moises",
@@ -75,7 +126,7 @@ export const productos = [
             { titulo: "Medidas", valor: "66 x 46 cm" },
             { titulo: "Detalles", valor: "Telas tejidas Panamá. Espuma de alta densidad. Incluye 2 almohadones toys (color aleatorio). Fresco, suave, muy confortable. Modo de lavado: Lavar A MANO con agua fría. No refregar ni centrifugar." }
         ],
-        destacado: true
+        destacado: false
     },
     {
         id: 7,
@@ -88,7 +139,7 @@ export const productos = [
             { titulo: "Medidas", valor: "17 x 10 cm" },
             { titulo: "Detalles", valor: "Peine universal para perros y gatos de tamaño mediano. Ideal para desenredar el pelaje y eliminar pelo muerto. Diseño ergonómico para un manejo cómodo." }
         ],
-        destacado: false
+        destacado: true
     },
     {
         id: 8,
@@ -267,7 +318,7 @@ export const productos = [
         ],
         destacado: false
     },
-    {
+    /*{
         id: 21,
         nombre: "Cortador de Uñas para Perros y Gatos Nail-e Beepaw",
         categoria: "Higiene",
@@ -1199,5 +1250,5 @@ export const productos = [
             { titulo: "Detalles", valor: "Transportadora para mascotas. Resistente y segura para transporte de mascotas." }
         ],
         destacado: false
-    }
+    }*/
 ];
