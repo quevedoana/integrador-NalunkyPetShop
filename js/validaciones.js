@@ -74,8 +74,9 @@ function validar() {
 }
 
 function mostrarDatos(nombre, telefono, email, mensaje) {
-  let anterior = document.getElementById("datosEnviados");
+  const anterior = document.getElementById("datosEnviados");
   if (anterior) anterior.remove();
+
   const contenedor = document.createElement("div");
   contenedor.id = "datosEnviados";
   contenedor.style.marginTop = "20px";
@@ -84,12 +85,10 @@ function mostrarDatos(nombre, telefono, email, mensaje) {
   contenedor.style.borderRadius = "10px";
   contenedor.style.backgroundColor = "#ffd6a5";
 
-
   const titulo = document.createElement("h3");
   titulo.textContent = "Datos enviados correctamente:";
   contenedor.appendChild(titulo);
 
- 
   const lista = document.createElement("ul");
 
   const li1 = document.createElement("li");
@@ -110,6 +109,7 @@ function mostrarDatos(nombre, telefono, email, mensaje) {
 
   contenedor.appendChild(lista);
 
-  const formulario = document.getElementById("form-contacto");
-  formulario.parentNode.appendChild(contenedor);
+  const resultado = document.getElementById("resultado");
+    resultado.innerHTML = "";
+    resultado.appendChild(contenedor);
 }

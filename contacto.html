@@ -32,103 +32,98 @@
       </p>
     </div>
 
-    <div id="seccion">
-      <div id="contacto2">
-        <div id="info">Información de Contacto</div>
-        <p>
-          Visítanos en nuestro local o comunícate con nosotros. Estaremos
-          encantados de atenderte y ayudarte a encontrar el producto perfecto
-          para tu mascota.
-        </p>
-        <div class="container">
-          <div class="info">
-            <img src="assets/ubicacion.svg" alt="ubicacion" class="iconos" />
-            <div class="texto">
-              <p class="texto-titulo">Dirección</p>
-              <p class="info2">
-                Bolivar 1234 <br />
-                C5700-San Luis <br />
-                San Luis<br />
-                Argentina
-              </p>
-            </div>
-          </div>
+    <section id="contacto">
+      <div id="seccion">
+        <div id="contacto2">
+          <div id="info">Información de Contacto</div>
+          <p>
+            Visítanos en nuestro local o comunícate con nosotros. Estaremos
+            encantados de atenderte y ayudarte a encontrar el producto perfecto
+            para tu mascota.
+          </p>
 
-          <div class="info">
-            <img src="assets/telephone.svg" alt="telefono" class="iconos" />
-            <div class="texto">
-              <p class="texto-titulo">Teléfono</p>
-              <p class="info2">+54 266 5020295</p>
+          <div class="container">
+            <div class="info">
+              <img src="assets/ubicacion.svg" alt="ubicacion" class="iconos" />
+              <div class="texto">
+                <p class="texto-titulo">Dirección</p>
+                <p class="info2">
+                  Bolivar 1234 <br />
+                  C5700-San Luis <br />
+                  San Luis<br />
+                  Argentina
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="info">
-            <img src="assets/mail.svg" alt="email" class="iconos" />
-            <div class="texto">
-              <p class="texto-titulo">Email</p>
-              <p class="info2">contacto@nalunkypetshop.com</p>
+            <div class="info">
+              <img src="assets/telephone.svg" alt="telefono" class="iconos" />
+              <div class="texto">
+                <p class="texto-titulo">Teléfono</p>
+                <p class="info2">+54 266 5020295</p>
+              </div>
             </div>
-          </div>
 
-          <div class="info">
-            <img src="assets/clock.svg" alt="reloj" class="iconos" />
-            <div class="texto">
-              <p class="texto-titulo">Horarios de Atención</p>
-              <p class="info2">
-                Lunes a Viernes: 10:00 - 19:00 <br />
-                Sábados: 10:00 - 14:00
-              </p>
+            <div class="info">
+              <img src="assets/mail.svg" alt="email" class="iconos" />
+              <div class="texto">
+                <p class="texto-titulo">Email</p>
+                <p class="info2">contacto@nalunkypetshop.com</p>
+              </div>
+            </div>
+
+            <div class="info">
+              <img src="assets/clock.svg" alt="reloj" class="iconos" />
+              <div class="texto">
+                <p class="texto-titulo">Horarios de Atención</p>
+                <p class="info2">
+                  Lunes a Viernes: 10:00 - 19:00 <br />
+                  Sábados: 10:00 - 14:00
+                </p>
+              </div>
             </div>
           </div>
         </div>
+
+        <form id="form-contacto" onsubmit="return validar()" novalidate>
+          <div id="info">Envíanos un mensaje</div>
+
+          <div class="item">
+            <label class="contacto" for="nombre">Nombre *</label>
+            <input
+              type="text"
+              name="nombre"
+              minlength="3"
+              maxlength="40"
+              placeholder="Ingrese su nombre"
+            />
+            <span id="errorNombre"></span>
+          </div>
+
+          <div class="item">
+            <label class="contacto" for="telefono">Teléfono *</label>
+            <input type="tel" name="telefono" maxlength="10" />
+            <span id="errorTel"></span>
+          </div>
+
+          <div class="item">
+            <label class="contacto" for="email">Email *</label>
+            <input type="email" name="email" />
+            <span id="errorEmail"></span>
+          </div>
+
+          <div class="item">
+            <label class="contacto" for="mensaje">Mensaje *</label>
+            <textarea name="mensaje" rows="4"></textarea>
+            <span id="errorMens"></span>
+          </div>
+
+          <button class="btn-enviar" type="submit">Enviar</button>
+        </form>
       </div>
 
-      <form id="form-contacto" onsubmit="return validar()" novalidate>
-        <div id="info">Envíanos un mensaje</div>
-
-        <div class="item">
-          <label class="contacto" for="nombre">Nombre *</label>
-          <input
-            type="text"
-            name="nombre"
-            minlength="3"
-            maxlength="40"
-            placeholder="Ingrese su nombre"
-          />
-          <span id="errorNombre"></span>
-        </div>
-
-        <div class="item">
-          <label class="contacto" for="telefono">Telefono *</label>
-          <input
-            type="tel"
-            name="telefono"
-            maxlength="10"
-          />
-          <span id="errorTel"></span>
-        </div>
-
-        <div class="item">
-          <label class="contacto" for="email">Email <em>*</em></label>
-          <input
-            type="email"
-            name="email"
-          />
-          <span id="errorEmail"></span>
-        </div>
-
-        <div class="item">
-          <label class="contacto" for="mensaje">Mensaje <em>*</em></label>
-          <textarea
-            name="mensaje"
-            rows="4"
-          ></textarea>
-          <span id="errorMens"></span>
-        </div>
-
-        <button class="btn-enviar" type="submit">Enviar</button>
-      </form>
-    </div>
+      <div id="resultado"></div>
+    </section>
     <footer class="pie">
         <div class="g1">
             <div class="box">
